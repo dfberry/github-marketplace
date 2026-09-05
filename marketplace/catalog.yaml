@@ -1,0 +1,4 @@
+version: 1
+name: github-copilot-plugin-marketplace
+description: Minimal starter marketplace catalog
+plugins: []
