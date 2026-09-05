@@ -1,0 +1,5 @@
+name: hello-world-after-message
+description: Hook that appends a hello-world confirmation to messages.
+event: message.after
+action: append
+value: Hello from the hello-world plugin.

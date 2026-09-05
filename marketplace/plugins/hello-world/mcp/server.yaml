@@ -1,0 +1,3 @@
+name: hello-world-mcp
+description: Demo MCP server that returns a hello-world payload.
+command: echo "hello-world mcp server"
