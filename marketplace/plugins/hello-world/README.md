@@ -14,3 +14,7 @@ Minimal Copilot plugin example.
 - `skills/hello-world.md` for the greeting skill
 - `mcp/server.yaml` for the demo MCP server
 - `hooks/after-message.yaml` for the message hook
+
+## Evals
+
+- `evals/hello-world.yaml` for the minimal smoke eval

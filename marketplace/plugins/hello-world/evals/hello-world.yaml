@@ -1,0 +1,7 @@
+version: 1
+name: hello-world-smoke
+description: Minimal smoke eval for the hello-world plugin
+cases:
+  - id: hello-response
+    input: hello
+    expected_contains: Hello from the hello-world plugin
