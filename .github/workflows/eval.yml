@@ -1,0 +1,21 @@
+name: Run Plugin Eval
+
+on:
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'Pull request number to evaluate'
+        required: true
+        type: string
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR
+        uses: actions/checkout@v4
+        with:
+          ref: refs/pull/${{ github.event.inputs.pr_number }}/head
+
+      - name: Install and run eval
+        run: bash marketplace/plugins/hello-world/scripts/install-and-run-eval.sh
