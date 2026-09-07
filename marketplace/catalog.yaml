@@ -1,4 +1,9 @@
 version: 1
 name: github-copilot-plugin-marketplace
 description: Minimal starter marketplace catalog
-plugins: []
+plugins:
+  - id: hello-world
+    name: Hello World
+    description: Minimal Copilot hello-world plugin example
+    homepage: marketplace/plugins/hello-world/README.md
+    status: draft

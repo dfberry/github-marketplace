@@ -1,0 +1,15 @@
+id: hello-world
+name: Hello World
+description: Minimal Copilot hello-world plugin example
+homepage: marketplace/plugins/hello-world/README.md
+status: draft
+agent_managers:
+  - agent-manager.yaml
+skills:
+  - skills/hello-world.md
+mcp_servers:
+  - mcp/server.yaml
+hooks:
+  - hooks/after-message.yaml
+evals:
+  - evals/hello-world.yaml

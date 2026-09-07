@@ -1,39 +1,27 @@
 # GitHub Copilot Plugin Marketplace
 
-This repository defines a minimal first-phase marketplace for GitHub Copilot plugins.
+This repository includes a minimal hello-world Copilot plugin example.
 
-## Goal
+## Included example
 
-Create the smallest useful marketplace that can later grow into a full catalog.
+- 1 agent manager
+- 1 skill
+- 1 MCP server
+- 1 hook
 
-## Phase 1: minimal marketplace
+## Install
 
-The first phase should include only:
+1. Copy `marketplace/plugins/hello-world/` into your Copilot plugin workspace.
+2. Point Copilot at `marketplace/plugins/hello-world/plugin.yaml`.
+3. Start the plugin components listed in that manifest.
 
-- a single catalog file
-- a stable plugin metadata shape
-- a way to mark entries as draft or published
-- a clear place for future examples and docs
+## Use
 
-## Minimal catalog fields
+- Use the agent manager for a friendly greeting flow.
+- Use the skill for short hello-world responses.
+- Use the MCP server to return the demo greeting payload.
+- Use the hook to post-process hello-world messages.
 
-- `id`
-- `name`
-- `description`
-- `homepage`
-- `status`
+## Catalog
 
-## Minimal actions needed later
-
-No GitHub Actions are created in this repo yet. The minimal actions to add later are:
-
-- build the marketplace catalog from source metadata
-- validate plugin metadata before publishing
-- publish or preview the generated catalog
-
-## Next steps
-
-- add one minimal plugin as an example
-- add minimal evals for that plugin
-- add minimal docs for submission and review
-
+The marketplace catalog currently publishes the hello-world example as a draft entry.
