@@ -11,3 +11,5 @@ mcp_servers:
   - mcp/server.yaml
 hooks:
   - hooks/after-message.yaml
+evals:
+  - evals/hello-world.yaml
